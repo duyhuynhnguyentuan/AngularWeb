@@ -1,12 +1,24 @@
-<mat-expansion-panel class="sm:hidden" *ngIf="categories">
-    <mat-expansion-panel-header>
-        <mat-panel-title>
-            CATEGORIES
-        </mat-panel-title>
-    </mat-expansion-panel-header>
-    <mat-selection-list [multiple]="false">
-        <mat-list-option *ngFor="let category of categories" [value]="category">
-            <button (click)="onShowCategory(category.category)">{{category.category}}</button>
-        </mat-list-option>
-    </mat-selection-list>
+<div class="hidden md:inline lg:inline">
+<mat-expansion-panel *ngIf="categories">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      CATEGORIES
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <ul class="divide-y divide-gray-200">
+    <ng-container *ngFor="let category of categories">
+      <!-- Custom function to get distinct categories -->
+      <ng-container *ngIf="isDistinctCategory(category)">
+        <ng-container *ngTemplateOutlet="categoryOption; context: { $implicit: category }"></ng-container>
+      </ng-container>
+    </ng-container>
+  </ul>
 </mat-expansion-panel>
+
+<!-- Custom template to render the category option -->
+<ng-template #categoryOption let-category>
+  <li class="py-2">
+    <button class="text-zinc-500" (click)="onShowCategory(category.category)">{{ category.category }}</button>
+  </li>
+</ng-template>
+</div>

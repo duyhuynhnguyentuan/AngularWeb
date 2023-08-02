@@ -28,4 +28,15 @@ export class FiltersComponent implements OnInit, OnDestroy {
         this.categoriesSubscription.unsubscribe
       }
   }
+  // Add this function in your component class
+isDistinctCategory(category: Product): boolean {
+  if (!this.categories) {
+    return false;
+  }
+
+  // Check if the current category is distinct from previous ones
+  const index = this.categories.findIndex((c) => c.category === category.category);
+  return index === this.categories.indexOf(category);
+}
+
 }
