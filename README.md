@@ -10,10 +10,11 @@ Tailwind CSS: The app uses Tailwind CSS for styling and designing the user inter
 Features
 Product Listing: The app displays a wide range of products, organized into different categories, making it easy for users to find what they need.
 Product Details: Users can view detailed information about each product, including product name, price, category, and a product image.
-
+![image](https://github.com/duyhuynhnguyentuan/AngularWeb/assets/124075895/92d0ef21-b2fe-46da-9ea1-4426497026f7)
 Cart Functionality: Users can add products to their cart and manage the quantities of each item. The cart also displays the total cost of the selected items.
-
+![image](https://github.com/duyhuynhnguyentuan/AngularWeb/assets/124075895/0c53a50b-1a45-4ed0-b017-510c21e3ce28)
 Secure Checkout: The app integrates with the Stripe payment gateway to provide a secure and seamless checkout process for users.
+
 
 Getting Started
 Clone the repository to your local machine.
