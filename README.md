@@ -1,3 +1,5 @@
+Preview here: https://angular-web-tau.vercel.app/home 
+
 AngularJS Shopping App with Stripe Payment
 This is an AngularJS shopping app that allows users to browse and purchase products. The app displays various product categories, provides a cart function to add and manage selected items, and facilitates secure checkout using the Stripe payment gateway.
 ![image](https://github.com/duyhuynhnguyentuan/AngularWeb/assets/124075895/24432e3f-0a9d-4027-a99b-4f255564d886)
