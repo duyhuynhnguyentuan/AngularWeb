@@ -14,6 +14,7 @@ Product Details: Users can view detailed information about each product, includi
 Cart Functionality: Users can add products to their cart and manage the quantities of each item. The cart also displays the total cost of the selected items.
 ![image](https://github.com/duyhuynhnguyentuan/AngularWeb/assets/124075895/0c53a50b-1a45-4ed0-b017-510c21e3ce28)
 Secure Checkout: The app integrates with the Stripe payment gateway to provide a secure and seamless checkout process for users.
+![image](https://github.com/duyhuynhnguyentuan/AngularWeb/assets/124075895/04da3cd3-4bf2-4e36-83ec-2253271a8a0d)
 
 
 Getting Started
