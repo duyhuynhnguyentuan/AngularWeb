@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Cart, CartItem } from 'src/app/models/cart.model';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -24,9 +25,14 @@ export class HeaderComponent implements OnInit {
     .reduce((prev,current)=>prev+current,0)
 
   }
-  constructor(private cartService: CartService) { 
 
+  svgLogoUrl: SafeResourceUrl;
+  
+  constructor(private cartService: CartService, private sanitizer: DomSanitizer){
+    this.svgLogoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('images/DuyHuynh.svg');
   }
+
+ 
 
   ngOnInit(): void {
     this.cartService.cart.subscribe((_cart : Cart)=>{
